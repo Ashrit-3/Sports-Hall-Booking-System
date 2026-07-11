@@ -1,0 +1,365 @@
+HTML CODE:
+<div class="sports-home">
+
+    <!-- Navigation -->
+    <nav class="top-nav">
+
+        <div class="logo">
+
+            <div class="logo-circle">
+                🏅
+            </div>
+
+            <div class="logo-text">
+                <h2>SportHub</h2>
+                <small>Book. Play. Win.</small>
+            </div>
+
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="javascript:void(0)"
+                   ng-click="c.scrollToHalls()">
+                    Book Venue
+                </a>
+            </li>
+
+            <li>
+                <a href="javascript:void(0)"
+                   ng-click="c.myBookings()">
+                    My Bookings
+                </a>
+            </li>
+
+            <li>
+                <a href="javascript:void(0)"
+                   ng-click="c.help()">
+                    Help
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-left">
+
+            <h1>
+                Find Your Perfect
+                <br>
+                Sports Venue
+            </h1>
+
+            <p>
+                Book Cricket Grounds, Badminton Courts,
+                Basketball Courts and Volleyball Courts
+                with instant confirmation and secure booking.
+            </p>
+
+            <button
+                class="explore-btn"
+                ng-click="c.scrollToHalls()">
+
+                Explore Venues →
+
+            </button>
+
+        </div>
+
+        <div class="hero-right">
+
+            <div class="sport-grid">
+
+                <div class="sport-card">
+                    <div style="font-size:60px;">🏏</div>
+                    <h4>Cricket</h4>
+                </div>
+
+                <div class="sport-card">
+                    <div style="font-size:60px;">🏸</div>
+                    <h4>Badminton</h4>
+                </div>
+
+                <div class="sport-card">
+                    <div style="font-size:60px;">🏀</div>
+                    <h4>Basketball</h4>
+                </div>
+
+                <div class="sport-card">
+                    <div style="font-size:60px;">🏐</div>
+                    <h4>Volleyball</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+
+    <section class="features">
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ⚡
+            </div>
+
+            <h3>Instant Booking</h3>
+
+            <p>
+                Reserve your favourite sports hall in seconds.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                💳
+            </div>
+
+            <h3>Secure Payments</h3>
+
+            <p>
+                Fast, secure and reliable payment process.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                📧
+            </div>
+
+            <h3>Email Confirmation</h3>
+
+            <p>
+                Receive instant booking confirmation by email.
+            </p>
+
+        </div>
+
+    </section>
+
+</div> 
+
+CSS code:
+.sports-home{
+background:linear-gradient(135deg,#5B4BDB,#7C5CFF);
+min-height:100vh;
+font-family:'Segoe UI',sans-serif;
+color:#fff;
+}
+
+/* Navigation */
+
+.top-nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 60px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+}
+
+.logo-circle{
+width:60px;
+height:60px;
+border-radius:50%;
+background:#fff;
+color:#5B4BDB;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+margin-right:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.logo-text h2{
+margin:0;
+font-size:32px;
+font-weight:bold;
+}
+
+.logo-text small{
+font-size:14px;
+opacity:.9;
+}
+
+.menu{
+display:flex;
+gap:35px;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.menu li a{
+color:#fff;
+font-size:18px;
+text-decoration:none;
+transition:.3s;
+}
+
+.menu li a:hover{
+color:#FFD54F;
+}
+
+/* Hero */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:70px 60px;
+}
+
+.hero-left{
+width:50%;
+}
+
+.hero-left h1{
+font-size:60px;
+line-height:1.2;
+margin-bottom:20px;
+font-weight:700;
+}
+
+.hero-left p{
+font-size:20px;
+line-height:32px;
+margin-bottom:35px;
+opacity:.95;
+}
+
+.explore-btn{
+background:#00C853;
+padding:18px 38px;
+border:none;
+border-radius:35px;
+color:#fff;
+font-size:20px;
+cursor:pointer;
+transition:.3s;
+}
+
+.explore-btn:hover{
+background:#00A843;
+transform:translateY(-4px);
+}
+
+.hero-right{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.sport-card{
+width:170px;
+height:170px;
+background:#fff;
+border-radius:22px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:#5B4BDB;
+font-size:55px;
+font-weight:bold;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+transition:.3s;
+}
+
+.sport-card:hover{
+transform:translateY(-8px);
+}
+
+.sport-card h4{
+margin-top:10px;
+font-size:18px;
+}
+
+/* Features */
+
+.features{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:60px;
+}
+
+.feature{
+width:280px;
+background:#fff;
+color:#333;
+padding:35px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.feature-icon{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.feature h3{
+color:#5B4BDB;
+margin-bottom:15px;
+}
+
+.feature p{
+color:#666;
+line-height:26px;
+}
+
+SERVER SCRIPT CODE:
+(function() {
+
+    data.portal = "SportHub";
+
+})();
+
+CLIENT CONTROLLER  CODE:
+api.controller = function($window, $location, $anchorScroll) {
+
+    var c = this;
+
+    c.scrollToHalls = function() {
+
+        $location.hash('sports-halls');
+        $anchorScroll();
+
+    };
+
+    c.myBookings = function() {
+
+        $window.location.href = "/sz?id=my_bookings";
+
+    };
+
+    c.help = function() {
+
+        alert(
+            "🏅 SportHub\n\n" +
+            "Need help?\n\n" +
+            "Contact the Sports Hall Administrator.\n\n" +
+            "Email: sports@college.edu"
+        );
+
+    };
+
+};
